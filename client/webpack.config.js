@@ -54,7 +54,22 @@ module.exports = () => {
             },
           },
         },
+        // Added rule for image files
+        {
+          test: /\.(png|jpg|jpeg|gif|svg)$/,
+          use: [
+            {
+              loader: 'file-loader',
+              options: {
+                name: '[name].[ext]',
+                outputPath: 'client/src/images/', // Output path for images
+                publicPath: 'client/src/images/', // Path used to generate URLs to the images
+              },
+            },
+          ],
+        },
       ],
     },
   };
 };
+
