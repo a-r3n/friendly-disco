@@ -35,8 +35,6 @@ The below screenshots show how the app should look:
 
 ![alt text](assets/jate-screenshot-2.png)
 
-![alt text](assets/jate-screenshot-3.png)
-
 ## Credits
 
 This project has been build using starter code: https://github.com/coding-boot-camp/cautious-meme
