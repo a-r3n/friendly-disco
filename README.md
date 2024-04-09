@@ -3,12 +3,11 @@ A browser-based text editor that works with or without an internet connection
 
 ## Description
 
-Provide a short description explaining the what, why, and how of your project. Use the following questions as a guide:
+JATE is a text editor that allows users to write and save notes on their browser.
 
-- What was your motivation?
-- Why did you build this project? (Note: the answer is not "Because it was a homework assignment.")
-- What problem does it solve?
-- What did you learn?
+Importantly, JATE allows you to write and recall your notes whether you are online or not. 
+
+It is the perfect on-the-go note taking application. 
 
 ## Table of Contents
 
@@ -19,26 +18,37 @@ Provide a short description explaining the what, why, and how of your project. U
 
 ## Installation
 
-What are the steps required to install your project? Provide a step-by-step description of how to get the development environment running.
+Download the project repository from GitHub: https://github.com/a-r3n/friendly-disco
+
+Then follow the 3 steps:
+1. Open and integrated terminal and run 'npm install'
+2. Run 'npm run build'
+3. Run 'node server/server.js'
 
 ## Usage
 
-Provide instructions and examples for use. Include screenshots as needed.
+You can use the application via the Render link: https://friendly-disco-n84l.onrender.com
 
-To add a screenshot, create an `assets/images` folder in your repository and upload your screenshot to it. Then, using the relative file path, add it to your README using the following syntax:
+The below screenshots show how the app should look:
 
-![alt text](assets/images/screenshot.png)
+![alt text](assets/jate-screenshot-1.png)
+
+![alt text](assets/jate-screenshot-2.png)
+
+![alt text](assets/jate-screenshot-3.png)
 
 ## Credits
 
-List your collaborators, if any, with links to their GitHub profiles.
+This project has been build using starter code: https://github.com/coding-boot-camp/cautious-meme
 
-If you used any third-party assets that require attribution, list the creators with links to their primary web presence in this section.
+It also would not be possible without the 3rd party apps and libraries used: Express.js, Webpack and IndexDB. 
 
-If you followed tutorials, include links to those here as well.
+Thank you to all those who contributed to the starter code and these 3rd party apps and library. 
 
 ## License
 
-The last section of a high-quality README file is the license. This lets other developers know what they can and cannot do with your project. If you need help choosing a license, refer to [https://choosealicense.com/](https://choosealicense.com/).
+This project has been build under an MIT License. 
+
+For more information on the license and conditions of use, please refer to the license document in the GitHub repository: https://github.com/a-r3n/friendly-disco
 
 ---
