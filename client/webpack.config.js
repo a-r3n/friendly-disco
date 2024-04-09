@@ -16,23 +16,26 @@ module.exports = () => {
     },
     plugins: [
       new HtmlWebpackPlugin({
-        template: './src/index.html',
-        title: 'Your App Title'
+        template: '../client/index.html',
+        title: 'Note App'
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'service-worker.js',
       }),
       new WebpackPwaManifest({
-        name: 'Your App Name',
-        short_name: 'AppShortName',
-        description: 'Your App Description',
-        background_color: '#ffffff',
-        crossorigin: 'use-credentials', // Can be set to 'anonymous'
+        name: 'Notes',
+        short_name: 'Notes',
+        description: 'Take notes on your browser',
+        background_color: '#225ca3',
+        theme_color: '#225ca3',
+        start_url: './',
+        publicPath: './',        
         icons: [
           {
             src: path.resolve('src/images/icon.png'),
             sizes: [96, 128, 192, 256, 384, 512], // multiple sizes
+            destination: path.join('assets', 'icons'),
           },
         ],
       }),
@@ -45,12 +48,14 @@ module.exports = () => {
           use: ['style-loader', 'css-loader'],
         },
         {
-          test: /\.js$/,
+          test: /\.m?js$/,
           exclude: /node_modules/,
+          // We use babel-loader in order to use ES6.
           use: {
             loader: 'babel-loader',
             options: {
               presets: ['@babel/preset-env'],
+              plugins: ['@babel/plugin-proposal-object-rest-spread', '@babel/transform-runtime'],
             },
           },
         },
